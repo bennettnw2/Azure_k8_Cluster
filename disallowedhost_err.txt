@@ -1,0 +1,73 @@
+Environment:
+
+
+Request Method: GET
+Request URL: http://20.81.51.142/
+
+Django Version: 3.2.7
+Python Version: 3.10.0
+Installed Applications:
+['learning_logs',
+ 'users',
+ 'bootstrap4',
+ 'django.contrib.admin',
+ 'django.contrib.auth',
+ 'django.contrib.contenttypes',
+ 'django.contrib.sessions',
+ 'django.contrib.messages',
+ 'django.contrib.staticfiles']
+Installed Middleware:
+['django.middleware.security.SecurityMiddleware',
+ 'django.contrib.sessions.middleware.SessionMiddleware',
+ 'django.middleware.common.CommonMiddleware',
+ 'django.middleware.csrf.CsrfViewMiddleware',
+ 'django.contrib.auth.middleware.AuthenticationMiddleware',
+ 'django.contrib.messages.middleware.MessageMiddleware',
+ 'django.middleware.clickjacking.XFrameOptionsMiddleware']
+
+
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.10/site-packages/django/http/request.py", line 149, in get_host
+    raise DisallowedHost(msg)
+
+Exception Type: DisallowedHost at /
+Exception Value: Invalid HTTP_HOST header: '20.81.51.142'. You may need to add '20.81.51.142' to ALLOWED_HOSTS.
+
+Meta Data
+HTTP_ACCEPT     'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+HTTP_ACCEPT_ENCODING     'gzip, deflate'
+HTTP_ACCEPT_LANGUAGE     'en-US,en;q=0.5'
+HTTP_CACHE_CONTROL     'max-age=0'
+HTTP_CONNECTION     'keep-alive'
+HTTP_HOST     '20.81.51.142'
+HTTP_UPGRADE_INSECURE_REQUESTS     '1'
+HTTP_USER_AGENT     ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 '
+ 'Firefox/95.0'
+)PATH_INFO     '/'
+QUERY_STRING     ''
+RAW_URI     '/'
+REMOTE_ADDR     '10.240.0.5'
+REMOTE_PORT     '25142'
+REQUEST_METHOD     'GET'
+SCRIPT_NAME     ''
+SERVER_NAME     '0.0.0.0'
+SERVER_PORT     '8000'
+SERVER_PROTOCOL     'HTTP/1.1'
+SERVER_SOFTWARE     'gunicorn/20.1.0'
+gunicorn.socket     <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('10.244.1.5', 8000), raddr=('10.240.0.5', 25142)>
+wsgi.errors     <gunicorn.http.wsgi.WSGIErrorsWrapper object at 0x7f58b7049360>
+wsgi.file_wrapper     <class 'gunicorn.http.wsgi.FileWrapper'>
+wsgi.input     <gunicorn.http.body.Body object at 0x7f58b7048310>
+wsgi.input_terminated     True
+wsgi.multiprocess     True
+wsgi.multithread     False
+wsgi.run_once     False
+wsgi.url_scheme     'http'
+wsgi.version     (1, 0)

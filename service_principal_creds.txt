@@ -1,0 +1,5 @@
+WARNING: Creating 'acrpull' role assignment under scope '/subscriptions/5f7d38bc-53dd-4ee1-9d0f-c840568abcad/resourceGroups/myResourceGroup/providers/Microsoft.ContainerRegistry/registries/NygelsRegistry'
+WARNING: The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
+WARNING: 'name' property in the output is deprecated and will be removed in the future. Use 'appId' instead.
+Service principal ID: d794f7a1-6835-4f10-b105-3e9710668699
+Service principal password: DELylWqYo3qPtvA00YQ~IW.4gE1Yk--3S0
